@@ -32,6 +32,7 @@ plugin_LTLIBRARIES = \
 	c0rners.la \
 	cartoon.la \
 	cluster.la \
+	colgate.la \
 	coloradj_RGB.la \
 	colordistance.la \
 	color_only.la \
@@ -45,9 +46,11 @@ plugin_LTLIBRARIES = \
 	delaygrab.la \
 	difference.la \
 	distort0r.la \
+	dither.la \
 	divide.la \
 	dodge.la \
 	edgeglow.la \
+	emboss.la \
 	equaliz0r.la \
 	flippo.la \
 	G.la \
@@ -81,6 +84,7 @@ plugin_LTLIBRARIES = \
 	perspective.la \
 	pixeliz0r.la \
 	plasma.la \
+	posterize.la \
 	pr0be.la \
 	pr0file.la \
 	primaries.la \
@@ -95,6 +99,7 @@ plugin_LTLIBRARIES = \
 	sobel.la \
 	softlight.la \
 	sopsat.la \
+	spillsupress.la \
 	squareblur.la \
 	subtract.la \
 	tehroxx0r.la \
@@ -149,7 +154,7 @@ endif
 # FILTERS
 #
 3dflippo_la_SOURCES = filter/3dflippo/3dflippo.c
-alpha0ps_la_SOURCES = filter/alpha0ps/alpha0ps.c
+alpha0ps_la_SOURCES = filter/alpha0ps/alpha0ps.c filter/alpha0ps/fibe_f.h
 alphagrad_la_SOURCES = filter/alpha0ps/alphagrad.c
 alphaspot_la_SOURCES = filter/alpha0ps/alphaspot.c
 B_la_SOURCES = filter/RGB/B.c
@@ -161,6 +166,7 @@ bw0r_la_SOURCES = filter/bw0r/bw0r.c
 c0rners_la_SOURCES = filter/c0rners/c0rners.c filter/c0rners/interp.h
 cartoon_la_SOURCES = filter/cartoon/cartoon.cpp
 cluster_la_SOURCES = filter/cluster/cluster.c
+colgate_la_SOURCES = filter/colgate/colgate.c
 coloradj_RGB_la_SOURCES = filter/coloradj/coloradj_RGB.c
 colordistance_la_SOURCES = filter/colordistance/colordistance.c
 contrast0r_la_SOURCES = filter/contrast0r/contrast0r.c
@@ -170,7 +176,9 @@ defish0r_la_SOURCES = filter/defish0r/defish0r.c filter/defish0r/interp.h
 delay0r_la_SOURCES = filter/delay0r/delay0r.cpp
 delaygrab_la_SOURCES = filter/delaygrab/delaygrab.cpp
 distort0r_la_SOURCES = filter/distort0r/distort0r.c
+dither_la_SOURCES = filter/dither/dither.c
 edgeglow_la_SOURCES = filter/edgeglow/edgeglow.cpp
+emboss_la_SOURCES = filter/emboss/emboss.c
 equaliz0r_la_SOURCES = filter/equaliz0r/equaliz0r.cpp
 flippo_la_SOURCES = filter/flippo/flippo.c
 G_la_SOURCES = filter/RGB/G.c
@@ -192,6 +200,7 @@ nosync0r_la_SOURCES = filter/nosync0r/nosync0r.cpp
 partik0l_la_SOURCES = generator/partik0l/partik0l.cpp
 perspective_la_SOURCES = filter/perspective/perspective.c
 pixeliz0r_la_SOURCES = filter/pixeliz0r/pixeliz0r.c
+posterize_la_SOURCES = filter/posterize/posterize.c
 pr0be_la_SOURCES = filter/measure/pr0be.c filter/measure/measure.h filter/measure/font2.h
 pr0file_la_SOURCES = filter/measure/pr0file.c filter/measure/measure.h filter/measure/font2.h
 primaries_la_SOURCES = filter/primaries/primaries.cpp
@@ -202,6 +211,7 @@ select0r_la_SOURCES = filter/select0r/select0r.c
 sharpness_la_SOURCES = filter/sharpness/sharpness.c
 sobel_la_SOURCES = filter/sobel/sobel.cpp
 sopsat_la_SOURCES = filter/sopsat/sopsat.cpp
+spillsupress_la_SOURCES = filter/spillsupress/spillsupress.c
 squareblur_la_SOURCES = filter/squareblur/squareblur.c
 tehroxx0r_la_SOURCES = filter/tehroxx0r/tehRoxx0r.c
 threelay0r_la_SOURCES = filter/threelay0r/threelay0r.cpp
