@@ -1,8 +1,14 @@
 /*
+<<<<<<< HEAD
  * This file is a modified port of Softglow plug-in from Gimp.
  * It contains code from plug-ins/common/softglow.c, see that for copyrights.
  *
  * sigmoidaltrnasfer.c
+=======
+ * This file is contains sigmoidal transfer function from file plug-ins/common/softglow.c in gimp.
+ *
+ * sigmoidaltransfer.c
+>>>>>>> upstream/master
  * Copyright 2012 Janne Liljeblad 
  *
  * This file is a Frei0r plugin.
@@ -116,7 +122,11 @@ void f0r_get_plugin_info(f0r_plugin_info_t* sigmoidalInfo)
   sigmoidalInfo->major_version = 0; 
   sigmoidalInfo->minor_version = 9; 
   sigmoidalInfo->num_params =  2; 
+<<<<<<< HEAD
   sigmoidalInfo->explanation = "Desaturates image and applies sigmoidal transfer to luma.";
+=======
+  sigmoidalInfo->explanation = "Desaturates image and creates a particular look that could be called Stamp, Newspaper or Photocopy";
+>>>>>>> upstream/master
 }
 
 void f0r_get_param_info(f0r_param_info_t* info, int param_index)

@@ -27,8 +27,13 @@
 #include <assert.h>
 #include <math.h>
 #include "frei0r.h"
+<<<<<<< HEAD
 #include "frei0r_math.h"
 #include "blur.h"
+=======
+#include "blur.h"
+#include "frei0r_math.h"
+>>>>>>> upstream/master
 
 #define SIGMOIDAL_BASE   2
 #define SIGMOIDAL_RANGE 20

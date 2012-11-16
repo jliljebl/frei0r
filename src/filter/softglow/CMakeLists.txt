@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 set (SOURCES softglow.c blur.h)
+=======
+set (SOURCES softglow.c)
+>>>>>>> upstream/master
 set (TARGET softglow)
 
 if (MSVC)

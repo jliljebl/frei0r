@@ -1,11 +1,20 @@
 /*
  * This file is a port of Colorize plug-in from Gimp.
+<<<<<<< HEAD
  * It contains code from files listed below, see those for copyrights:
  *
+=======
+ * It contains code from files listed below:
+>>>>>>> upstream/master
  * gimpoperationcolorize.c
  * gimpcolortypes.h
  * gimpcolorspace.c
  * gimprgb.h
+<<<<<<< HEAD
+=======
+ * Copyright (C) 1995 Spencer Kimball and Peter Mattis
+ * Copyright (C) 2007 Michael Natterer
+>>>>>>> upstream/master
  *
  * This file, colorize.c
  * Copyright 2012 Janne Liljeblad 
@@ -146,17 +155,29 @@ void f0r_get_param_info(f0r_param_info_t* info, int param_index)
   case 0:
     info->name = "hue"; 
     info->type = F0R_PARAM_DOUBLE;
+<<<<<<< HEAD
     info->explanation = "Hue";
+=======
+    info->explanation = "Color shade of the colorized image";
+>>>>>>> upstream/master
     break;
   case 1:
     info->name = "saturation"; 
     info->type = F0R_PARAM_DOUBLE;
+<<<<<<< HEAD
     info->explanation = "Hue";
+=======
+    info->explanation = "Amount of color in the colorized image";
+>>>>>>> upstream/master
     break;
   case 2:
     info->name = "lightness"; 
     info->type = F0R_PARAM_DOUBLE;
+<<<<<<< HEAD
     info->explanation = "Hue";
+=======
+    info->explanation = "Lightness of the colorized image";
+>>>>>>> upstream/master
     break;
   }
 }

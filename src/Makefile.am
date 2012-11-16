@@ -35,6 +35,9 @@ plugin_LTLIBRARIES = \
 	colgate.la \
 	coloradj_RGB.la \
 	colordistance.la \
+	colorhalftone.la \
+	colorize.la \
+	colortap.la \
 	color_only.la \
 	composition.la \
 	contrast0r.la \
@@ -90,13 +93,16 @@ plugin_LTLIBRARIES = \
 	primaries.la \
 	R.la \
 	RGB.la \
+	rgbnoise.la \
 	saturation.la \
 	saturat0r.la \
 	scanline0r.la \
 	screen.la \
 	select0r.la \
 	sharpness.la \
+	sigmoidaltransfer.la \
 	sobel.la \
+	softglow.la \
 	softlight.la \
 	sopsat.la \
 	spillsupress.la \
@@ -169,6 +175,9 @@ cluster_la_SOURCES = filter/cluster/cluster.c
 colgate_la_SOURCES = filter/colgate/colgate.c
 coloradj_RGB_la_SOURCES = filter/coloradj/coloradj_RGB.c
 colordistance_la_SOURCES = filter/colordistance/colordistance.c
+colorhalftone_la_SOURCES = filter/colorhalftone/colorhalftone.c
+colorize_la_SOURCES = filter/colorize/colorize.c
+colortap_la_SOURCES = filter/colortap/colortap.c
 contrast0r_la_SOURCES = filter/contrast0r/contrast0r.c
 curves_la_SOURCES = filter/curves/curves.c
 d90stairsteppingfix_la_SOURCES = filter/d90stairsteppingfix/d90stairsteppingfix.cpp
@@ -183,7 +192,7 @@ equaliz0r_la_SOURCES = filter/equaliz0r/equaliz0r.cpp
 flippo_la_SOURCES = filter/flippo/flippo.c
 G_la_SOURCES = filter/RGB/G.c
 gamma_la_SOURCES = filter/gamma/gamma.c
-glow_la_SOURCES = filter/glow/glow.c filter/glow/blur.h
+glow_la_SOURCES = filter/glow/glow.c
 hqdn3d_la_SOURCES = filter/denoise/hqdn3d.c
 hueshift0r_la_SOURCES = filter/hueshift0r/hueshift0r.c filter/hueshift0r/matrix.h
 IIRblur_la_SOURCES = filter/blur/IIRblur.c filter/blur/fibe.h
@@ -194,7 +203,7 @@ letterb0xed_la_SOURCES = filter/letterb0xed/letterb0xed.c
 levels_la_SOURCES = filter/levels/levels.c
 lightgraffiti_la_SOURCES = filter/lightgraffiti/lightgraffiti.cpp
 luminance_la_SOURCES = filter/luminance/luminance.c
-mask0mate_la_SOURCES = filter/mask0mate/mask0mate.c filter/mask0mate/blur.h
+mask0mate_la_SOURCES = filter/mask0mate/mask0mate.c
 nervous_la_SOURCES = filter/nervous/nervous.cpp
 nosync0r_la_SOURCES = filter/nosync0r/nosync0r.cpp
 partik0l_la_SOURCES = generator/partik0l/partik0l.cpp
@@ -205,11 +214,14 @@ pr0be_la_SOURCES = filter/measure/pr0be.c filter/measure/measure.h filter/measur
 pr0file_la_SOURCES = filter/measure/pr0file.c filter/measure/measure.h filter/measure/font2.h
 primaries_la_SOURCES = filter/primaries/primaries.cpp
 R_la_SOURCES = filter/RGB/R.c
+rgbnoise_la_SOURCES = filter/rgbnoise/rgbnoise.c
 saturat0r_la_SOURCES = filter/saturat0r/saturat0r.c
 scanline0r_la_SOURCES = filter/scanline0r/scanline0r.cpp
 select0r_la_SOURCES = filter/select0r/select0r.c
 sharpness_la_SOURCES = filter/sharpness/sharpness.c
+sigmoidaltransfer_la_SOURCES = filter/sigmoidaltransfer/sigmoidaltransfer.c
 sobel_la_SOURCES = filter/sobel/sobel.cpp
+softglow_la_SOURCES = filter/softglow/softglow.c
 sopsat_la_SOURCES = filter/sopsat/sopsat.cpp
 spillsupress_la_SOURCES = filter/spillsupress/spillsupress.c
 squareblur_la_SOURCES = filter/squareblur/squareblur.c
